@@ -1,0 +1,103 @@
+/* Contenedor principal de la portada */
+.portada {
+    background-color: rgb(220, 175, 238);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Títulos */
+.portada h1 {
+    background-color: rgb(51, 9, 90);
+    color: rgb(178, 135, 218);
+    font-size: 70px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.portada h2 {
+    background-color: rgb(133, 81, 182);
+    color: rgb(48, 4, 88);
+    font-size: 60px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Contenedor de texto e imagen */
+.portada .texto-imagen {
+    display: flex;
+    align-items: center; 
+    gap: 100px; 
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.portada .texto-imagen p {
+    font-size: 50px;
+    margin: 0;
+}
+
+.portada .texto-imagen img {
+    width: 500px; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+/* Botón */
+.portada a.boton {
+    display: inline-block;
+    background-color: rgb(211, 5, 50);
+    color: rgb(224, 143, 150);
+    font-size: 55px;
+    border-radius: 3%;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+/* Imágenes adicionales */
+.portada img.extra {
+    width: 300px;  
+    height: 70px;  
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+
+    .portada {
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .portada .texto-imagen {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .portada .texto-imagen img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .portada a.boton {
+        font-size: 35px;
+        padding: 2%;
+    }
+
+    .portada h1 {
+        font-size: 45px;
+    }
+
+    .portada h2 {
+        font-size: 35px;
+    }
+
+    .portada .texto-imagen p {
+        font-size: 25px;
+    }
+}
+

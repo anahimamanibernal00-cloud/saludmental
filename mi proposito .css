@@ -1,0 +1,81 @@
+body {
+    background-image: url("proposito font.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+h1 {
+    background-color: rgb(77, 13, 94);
+    color: rgb(10, 1, 19);
+    font-size: 60px;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(16, 15, 17);
+    font-size: 55px;
+    padding: 5px;
+}
+
+.texto-imagen { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* hace que sea responsive */
+}
+
+.texto {
+    flex: 2;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.imagen img {
+    max-width: 300px;
+    width: 100%; /* se ajusta al contenedor */
+    border-radius: 10px;
+}
+
+p {
+    font-size: 35px;
+}
+
+a {
+    background-color: rgb(53, 8, 104);
+    color: rgb(245, 163, 224);
+    font-size: 40px;
+    border-radius: 8px; /* corregido "2cap" que no existe */
+    padding: 1%;
+    text-decoration: none;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .texto-imagen {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .imagen img {
+        max-width: 100%;
+    }
+    a {
+        font-size: 30px;
+    }
+}

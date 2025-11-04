@@ -1,0 +1,110 @@
+/* === ESTILO GENERAL === */
+body {
+  background-image: url("font2,2.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: rgb(236, 232, 240);
+}
+
+/* === TÍTULOS === */
+h1 {
+  background-color: rgb(240, 132, 60);
+  color: rgb(10, 1, 19);
+  font-size: 60px;
+  text-align: center;
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+h2 {
+  color: rgb(236, 232, 240);
+  font-size: 55px;
+  text-align: center;
+  margin: 40px 10px 20px;
+}
+
+/* === CONTENEDOR TEXTO E IMAGEN === */
+.texto-imagen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap; /* permite que se acomode en pantallas pequeñas */
+}
+
+/* === TEXTO === */
+.texto {
+  flex: 2;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 35px;
+  margin: 0;
+  padding: 10px;
+  color: #151414;
+}
+
+/* === IMAGEN === */
+.imagen img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* === ENLACES / BOTONES === */
+a {
+  background-color: rgb(53, 8, 104);
+  color: rgb(245, 163, 224);
+  font-size: 40px;
+  border-radius: 2cap;
+  padding: 1%;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  background-color: rgb(80, 20, 150);
+}
+
+/* === RESPONSIVIDAD === */
+
+/* --- Para pantallas medianas (tablets) --- */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 28px;
+  }
+
+  .texto-imagen {
+    gap: 30px;
+  }
+
+  .imagen img {
+    max-width: 250px;
+  }
+
+  a {
+    font-size: 30px;
+    padding: 10px 20px;
+  }
+}
+
+/* --- Para cel*

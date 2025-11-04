@@ -1,0 +1,85 @@
+body {
+    background-image: url("menu img font.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+h1 {
+    background-color: rgb(137, 68, 202);
+    color: rgb(63, 8, 114);
+    font-size: 80px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Navegación */
+.navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 50px; /* margen para mover los botones al costado */
+}
+
+.navegacion li {
+    margin: 20px 0;
+}
+
+/* Enlaces */
+a {
+    display: inline-block;
+    background-color: rgb(53, 8, 104);
+    color: rgb(245, 163, 224);
+    font-size: 55px;
+    border-radius: 25%;
+    padding: 2% 5%;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+        padding: 15px;
+    }
+
+    .navegacion ul {
+        margin-left: 20px; /* menor margen en pantallas más pequeñas */
+    }
+
+    a {
+        font-size: 35px;
+        padding: 3% 6%;
+    }
+
+    .navegacion li {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 35px;
+        padding: 10px;
+    }
+
+    .navegacion ul {
+        margin-left: 10px;
+    }
+
+    a {
+        font-size: 25px;
+        padding: 4% 8%;
+    }
+}
+
